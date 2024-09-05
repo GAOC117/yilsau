@@ -7,6 +7,18 @@
     background-color: rgb(206,221,193);
 }
 
+.btn-yilsau{
+    background-color: rgb(206,221,193);
+    border:  1px solid rgba(43, 61, 27,.3)!important;
+}
+.bg-principal{
+    background-color: rgb(206,221,193);
+}
+
+.login-form{
+    background-color: rgb(231, 235, 228);
+}
+
 .nav-selected{
     color: black;
 }
@@ -16,4 +28,53 @@
 .nav-no-selected:hover{
     color: black;
     font-weight: 700;
+}
+
+.logo{
+    @media(width <= 640px){
+        width: 30%;
+       
+    }
+    @media( 640px < width < 768px ){
+        width: 90%;
+    }
+
+    @media(768px <= width < 1024px){
+        width: 45%;
+    }
+
+    @media(1024px <= width){
+        width: 20%;
+    }
+}
+
+.border-bottom-nav-selected{
+    
+    border-bottom-color: rgb(105, 112, 99);
+}
+.border-bottom-nav-no-selected:hover{
+    
+    border-bottom-color: rgb(43, 61, 27);
+}
+
+.border-left-nav-selected{
+    
+    border-left-color: rgb(105, 112, 99);
+}
+.border-left-nav-no-selected:hover, .btn-yilsau:hover{
+    
+    background-color: rgb(43, 61, 27)!important;
+    color: white;
+}
+
+
+.border-left-nav-selected:focus,.btn-yilsau:focus{
+    
+    background-color: rgb(105, 112, 99) !important;
+    color: white !important;
+}
+
+
+.hamburguesa:hover,.hamburgues:focus{
+    background-color:rgb(105, 112, 99);
 }
