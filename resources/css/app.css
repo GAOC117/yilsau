@@ -1,0 +1,19 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-navegacion{
+    background-color: rgb(206,221,193);
+}
+
+.nav-selected{
+    color: black;
+}
+.nav-no-selected{
+    color: gray;
+}
+.nav-no-selected:hover{
+    color: black;
+    font-weight: 700;
+}
