@@ -61,14 +61,15 @@
     
     border-left-color: rgb(105, 112, 99);
 }
-.border-left-nav-no-selected:hover, .btn-yilsau:hover{
+.border-left-nav-no-selected:hover, .btn-yilsau:hover, .btn-user{
     
     background-color: rgb(43, 61, 27)!important;
     color: white;
 }
 
 
-.border-left-nav-selected:focus,.btn-yilsau:focus{
+
+.border-left-nav-selected:focus,.btn-yilsau:focus, .btn-user:hover{
     
     background-color: rgb(105, 112, 99) !important;
     color: white !important;

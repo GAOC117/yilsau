@@ -8,7 +8,7 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/',HomeController::class)->name('home');
 
-Route::get('/admin/dashboard', [AdminDashboardController::class,'index'])->name('adminDashboard');//->middleware(['auth', 'verified'])->name('adminDashboard');
+Route::get('/admin/dashboard', [AdminDashboardController::class,'index'])->middleware(['auth', 'verified'])->name('adminDashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
