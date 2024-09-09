@@ -3,12 +3,21 @@
 use App\Http\Controllers\AdminDashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NuestrosServiciosController;
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\SobreNosotrosController;
 
 Route::get('/',HomeController::class)->name('home');
 
 Route::get('/admin/dashboard', [AdminDashboardController::class,'index'])->middleware(['auth', 'verified'])->name('adminDashboard');
+//Sobre Nosotros
+Route::get('/sobre-nosotros', [SobreNosotrosController::class,'index'])->name('nosotros');
+Route::get('/sobre-nosotros/edit', [SobreNosotrosController::class,'edit'])->name('nosotros.edit');//->middleware(['auth','verified'])->name('nosotros.edit');
+
+//Nuestro Servicios
+Route::get('/nuestros-servicios', [NuestrosServiciosController::class,'index'])->name('servicios');
+Route::get('/nuestros-servicios/create', [NuestrosServiciosController::class,'create'])->middleware(['auth','verified'])->name('servicios.create');
+Route::get('/nuestros-servicios/{servicio}/edit', [NuestrosServiciosController::class,'edit'])->middleware(['auth','verified'])->name('servicios.edit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

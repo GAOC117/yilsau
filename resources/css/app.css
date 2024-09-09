@@ -6,7 +6,28 @@
 .bg-navegacion{
     background-color: rgb(206,221,193);
 }
+.yilsau-body {
+    background-color: rgb(237, 243, 234);
+}
 
+
+/* Capa negra transparente */
+
+.imagenNosotros{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('../../storage/app/public/imagenes/ceraNosotros.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center 15%;
+    padding: 15rem 0;
+}
+
+.yilsau-body-dark{
+    background-color: rgba(0,0,0,.5)
+}
+
+.nosotros{
+    width: 40%;
+}
 .btn-yilsau{
     background-color: rgb(206,221,193);
     border:  1px solid rgba(43, 61, 27,.3)!important;
