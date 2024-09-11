@@ -7,7 +7,8 @@
             <x-text-input id="nombre_servicio" class="block mt-1 w-full" type="text" wire:model="nombre_servicio"
                 {{-- es vez de name = 'titulo' en livewire es wire:model = 'titulo' --}} :value="old('nombre_servicio')" placeholder="Nombre del servicio" />
             {{-- <x-input-error :messages="$errors->get('titulo')" class="mt-2" /> --}}
-            @error('nombre_servicio')
+            
+                @error('nombre_servicio')
                 <livewire:mostrar-alerta :message="$message" />
             @enderror
         </div>
