@@ -16,8 +16,10 @@ Route::get('/sobre-nosotros/edit', [SobreNosotrosController::class,'edit'])->nam
 
 //Nuestro Servicios
 Route::get('/nuestros-servicios', [NuestrosServiciosController::class,'index'])->name('servicios');
-Route::get('/nuestros-servicios/create', [NuestrosServiciosController::class,'create'])->middleware(['auth','verified'])->name('servicios.create');
-Route::get('/nuestros-servicios/{servicio}/edit', [NuestrosServiciosController::class,'edit'])->middleware(['auth','verified'])->name('servicios.edit');
+Route::get('/nuestros-servicios/create', [NuestrosServiciosController::class,'create'])->name('servicios.create');//->middleware(['auth','verified'])->name('servicios.create');
+Route::get('/nuestros-servicios/{servicio}/edit', [NuestrosServiciosController::class,'edit'])->name('servicios.edit');//->middleware(['auth','verified'])->name('servicios.edit');
+Route::get('/nuestros-servicios/{servicio}', [NuestrosServiciosController::class,'show'])->name('servicios.show');//->middleware(['auth','verified'])->name('servicios.edit');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

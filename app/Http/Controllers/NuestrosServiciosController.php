@@ -10,4 +10,8 @@ class NuestrosServiciosController extends Controller
     
     return view('servicios.index');
    }
+   public function create(){
+    
+    return view('servicios.create');
+   }
 }

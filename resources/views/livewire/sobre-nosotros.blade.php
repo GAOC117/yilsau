@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row px-5">
     <div>
         <a href="{{route('nosotros.edit')}}" class="btn btn-success mt-2 ms-2">Editar infomación</a>
     </div>
@@ -12,7 +12,7 @@
             </div>
           </div>
     </div>
-    <div class="flex justify-center my-5">
+    <div class="flex justify-center flex-column flex-md-row my-5 gap-4 gap-md-0">
     <div class="flex justify-center col-md-4 ">
         <div class="card boder border-white border-8 shadow-md" style="width: 18rem;">
             <img src="{{ asset('storage/imagenes/mision.png') }}" class="card-img"  alt="imagen mision">
