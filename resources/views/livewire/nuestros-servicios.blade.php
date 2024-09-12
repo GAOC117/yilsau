@@ -14,9 +14,9 @@
                     alt="{{ 'Imagen servicio ' . $servicio->nombre_servicio }}">
                 <div class="card-body">
                     <h5 class="card-title color-titulo h4">{{ $servicio->nombre_servicio }}</h5>
-                    <h class="card-text color-precio h5">${{ $servicio->costo }}</h>
-                    <p class="card-text">{{ $servicio->descripcion_breve }}</p>
-                    <div class="d-flex flex-column gap-1 mt-2">
+                    <h class="card-text color-precio h5 ">${{ $servicio->costo }}</h>
+                    <p class="card-text my-3">{{ $servicio->descripcion_breve }}</p>
+                    <div class="d-flex flex-column gap-1">
                         <a href="{{ route('servicios.show', $servicio->id) }}" class="btn btn-success">Ver más</a>
                         <a href="{{ route('servicios.edit', $servicio->id) }}" class="btn btn-primary">Editar</a>
                         <button wire:click = "$dispatch('mostrarAlerta',{{ $servicio->id }})"
@@ -39,6 +39,7 @@
 
         <script>
             Livewire.on('mostrarAlerta', servicioID => {
+                console.log("SI ENTRE");
                 Swal.fire({
                     title: '¿Eliminar servicio?',
                     text: "Un servicio eliminado no se puede recuperar",

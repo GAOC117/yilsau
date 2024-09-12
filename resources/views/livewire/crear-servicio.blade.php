@@ -13,20 +13,14 @@
             @enderror
         </div>
 
-        <div class="" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
-            <textarea name="body" class="char-limiter" rows="3" maxlength="280" x-ref="countme" x-on:keyup="count = $refs.countme.value.length"></textarea>
-          
-            <div class="">
-              <span x-html="count"></span> / <span x-html="$refs.countme.maxLength"></span>
-            </div>
-          </div>
+       
 
-        <div x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+          <div class="" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
             <x-input-label for="descripcion_breve" :value="__('Descripción breve del servicio')" />
-            <textarea id="descripcion_breve" class="block mt-1 w-full" type="text" wire:model="descripcion_breve"
-                 placeholder="Descripción breve" x-on:keyup="count = $refs.countme.value.length" maxlength="50"></textarea>
+            <textarea  id="descripcion_breve" class="block mt-1 w-full" type="text" wire:model="descripcion_breve"
+                 placeholder="Descripción breve" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" maxlength="100"></textarea>
                  <span x-html="count"></span> / <span x-html="$refs.countme.maxLength"></span>
-                 <p>{{$caracteres}}/50</p>
+                 
             @error('descripcion_breve')
                 <livewire:mostrar-alerta :message="$message" />
             @enderror

@@ -33,6 +33,16 @@
     background-color: rgba(0,0,0,.5)
 }
 
+.card-title {
+    height: 55px;   
+  
+}
+
+.card-text {
+    height: 80px;   
+  
+}
+
 .image-size{
     width: 100%; /* Ancho fijo */
     height: 200px; /* Alto fijo */

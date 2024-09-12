@@ -16,25 +16,21 @@ class CrearServicio extends Component
     public $descripcion_completa;
     public $costo;
     public $imagen;
-    public $caracteres=0;
+   
   
-    
+    // esta es la descripcion breve del servicio para solo mostrar en la card/ tarjet en la pag de nosotros
+
+    // esta es ahora la descripcion completa que se muestra cuando le das click en el boton de ver mas, para que asi ya no se muestre el texto de arriba, se mostraria el nombre del servicio, la imagen en grande, el precio 
 
     protected $rules = [
         'nombre_servicio' => 'required|string',
-        'descripcion_breve'=>'required|max:50',
+        'descripcion_breve'=>'required|max:100',
         'descripcion_completa' => 'required',
         'costo' => 'required|numeric',
         'imagen' => 'required|image'
     ];
 
-    public function contador(){
-       //extraño que no hace nada
-     
-    $this->caracteres = strlen($this->descripcion_breve);
-    
-    
-    }
+ 
 
 
     public function crearServicio(){
