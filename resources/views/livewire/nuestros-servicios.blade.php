@@ -17,7 +17,7 @@
                     <h class="card-text color-precio h5 ">${{ $servicio->costo }}</h>
                     <p class="card-text my-3">{{ $servicio->descripcion_breve }}</p>
                     <div class="d-flex flex-column gap-1">
-                        <a href="{{ route('servicios.show', $servicio->id) }}" class="btn btn-success">Ver más</a>
+                        <a href="{{ route('servicios.show', $servicio->id) }}" class="btn btn-yilsau">Ver más</a>
                         <a href="{{ route('servicios.edit', $servicio->id) }}" class="btn btn-primary">Editar</a>
                         <button wire:click = "$dispatch('mostrarAlerta',{{ $servicio->id }})"
                             class="btn btn-danger">Eliminar</button>

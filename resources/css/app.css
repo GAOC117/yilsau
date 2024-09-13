@@ -123,3 +123,9 @@
 .hamburguesa:hover,.hamburgues:focus{
     background-color:rgb(105, 112, 99);
 }
+
+
+.servicio-card{
+   
+    width:  45%;
+}
