@@ -9,6 +9,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SobreNosotrosController;
 
 
+
 Route::get('/',HomeController::class)->name('home');
 
 Route::get('/admin/dashboard', [AdminDashboardController::class,'index'])->middleware(['auth', 'verified'])->name('adminDashboard');
