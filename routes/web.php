@@ -26,6 +26,7 @@ Route::get('/nuestros-servicios/{servicio}', [NuestrosServiciosController::class
 
 //Productos
 Route::get('/productos', [ProductosController::class,'index'])->name('productos');
+Route::get('/productos/create', [ProductosController::class,'create'])->name('productos.create');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

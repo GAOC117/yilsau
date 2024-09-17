@@ -3,7 +3,7 @@
 
 <div class="px-5 flex flex-col items-center py-4 mt-4">
  
-  <div class="card-superior shadow-2xl bg-white  flex flex-col ">
+  <div class="card-superior shadow-2xl bg-white">
     <div class="card-titulo ">
       <h1 class="my-3 text-center display-6 titulo-color ">{{ $servicio->nombre_servicio }}</h1>
     </div>
@@ -12,7 +12,7 @@
     </div>
   </div>
   
-  <div class="card-inferior shadow-2xl flex flex-col bg-white">
+  <div class="card-inferior shadow-2xl  bg-white">
     <div class="card-precio">
       <p class=" mb-2 fs-4 color-precio">${{ $servicio->costo }}</p>
     </div>
