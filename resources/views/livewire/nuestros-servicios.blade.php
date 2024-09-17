@@ -9,7 +9,7 @@
 
     <div class="row gap-4 justify-center ">
         @forelse ($servicios as $servicio)
-            <div class="card pt-3 col-md-3" style="">
+            <div class="card pt-3 col-md-3 shadow-sm" style="">
                 <img src="{{ asset('storage/servicios/' . $servicio->imagen) }}" class="card-img-top image-size img-fluid"
                     alt="{{ 'Imagen servicio ' . $servicio->nombre_servicio }}">
                 <div class="card-body">

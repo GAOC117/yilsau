@@ -4,8 +4,10 @@ use App\Http\Controllers\AdminDashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NuestrosServiciosController;
+use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SobreNosotrosController;
+
 
 Route::get('/',HomeController::class)->name('home');
 
@@ -20,6 +22,9 @@ Route::get('/nuestros-servicios/create', [NuestrosServiciosController::class,'cr
 Route::get('/nuestros-servicios/{servicio}/edit', [NuestrosServiciosController::class,'edit'])->name('servicios.edit');//->middleware(['auth','verified'])->name('servicios.edit');
 Route::get('/nuestros-servicios/{servicio}', [NuestrosServiciosController::class,'show'])->name('servicios.show');//->middleware(['auth','verified'])->name('servicios.edit');
 
+
+//Productos
+Route::get('/productos', [ProductosController::class,'index'])->name('productos');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

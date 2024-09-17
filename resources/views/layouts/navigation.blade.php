@@ -22,7 +22,7 @@
                 <x-nav-link :href="route('servicios')" :active="request()->routeIs('servicios')">
                     Nuestros Servicios
                 </x-nav-link>
-                <x-nav-link :href="route('home')" :active="request()->routeIs('x')">
+                <x-nav-link :href="route('productos')" :active="request()->routeIs('productos')">
                     Nuestros productos
                 </x-nav-link>
                 <x-nav-link :href="route('home')" :active="request()->routeIs('x')">

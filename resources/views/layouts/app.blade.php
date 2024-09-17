@@ -20,8 +20,8 @@
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen yilsau-body">
+    <body class="font-sans min-h-screen antialiased yilsau-body">
+        <div class="min-h-screen  w-full">
             @include('layouts.navigation')
 
             <!-- Page Heading -->

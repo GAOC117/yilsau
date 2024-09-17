@@ -1,131 +1,196 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.bg-navegacion{
-    background-color: rgb(206,221,193);
+.bg-navegacion {
+    background-color: rgb(206, 221, 193);
 }
 .yilsau-body {
     background-color: rgb(237, 243, 234);
 }
 
-.color-precio{
+.color-precio {
     color: rgb(209, 73, 73);
     font-weight: 900;
 }
 
-.color-titulo{
+.card-titulo {
     color: rgb(43, 61, 27);
-
 }
+
+
+
 /* Capa negra transparente */
 
-.imagenNosotros{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('../../storage/app/public/imagenes/ceraNosotros.jpg');
+.imagenNosotros {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.7) 100%
+        ),
+        url("../../storage/app/public/imagenes/ceraNosotros.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center 15%;
     padding: 15rem 0;
 }
 
-.yilsau-body-dark{
-    background-color: rgba(0,0,0,.5)
+.yilsau-body-dark {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
-    height: 55px;   
-  
+    height: 55px;
 }
 
 .card-text {
-    height: 80px;   
-  
+    /* height: 80px; */
+}
+.titulo-color {
+    color: rgb(105, 112, 99);
 }
 
-.image-size{
+.image-size {
     width: 100%; /* Ancho fijo */
     height: 200px; /* Alto fijo */
-    object-fit: cover; 
+    object-fit: cover;
 }
-.nosotros{
+.nosotros {
     width: 40%;
 }
-.btn-yilsau{
-    background-color: rgb(206,221,193);
-    border:  1px solid rgba(43, 61, 27,.3)!important;
+.btn-yilsau {
+    background-color: rgb(206, 221, 193);
+    border: 1px solid rgba(43, 61, 27, 0.3) !important;
 }
-.bg-principal{
-    background-color: rgb(206,221,193);
+.bg-principal {
+    background-color: rgb(206, 221, 193);
 }
 
-.login-form{
+.login-form {
     background-color: rgb(231, 235, 228);
 }
 
-.nav-selected{
+.nav-selected {
     color: black;
 }
-.nav-no-selected{
+.nav-no-selected {
     color: gray;
 }
-.nav-no-selected:hover{
+.nav-no-selected:hover {
     color: black;
     font-weight: 700;
 }
 
-.logo{
-    @media(width <= 640px){
-        width: 30%;
-       
+.w-servicio {
+    @media (width > 768px) {
+        width: 95%;
+        margin: -30px auto 100px auto;
+        border-radius: 20px;
+        border: 1px solid rgb(22 101 52);
     }
-    @media( 640px < width < 768px ){
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: fit-content;
+    padding: 20px;
+}
+
+.card-imagen {
+    margin: 0 auto;
+}
+
+.card-imagen img {
+    max-width: 100%;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    @media (width > 768px) {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        
+    }
+}
+.card-superior {
+    border: none;
+    border: 1px solid rgb(22 101 52);
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    @media (width > 768px) {
+        width: 50%;
+        border-radius: 20px;
+    }
+}
+
+
+.card-inferior {
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: -5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    border: 1px solid rgb(22 101 52);
+    @media (width > 768px) {
+        border-radius: 20px;
+        width: 45%;
+        margin-top: -50px;
+
+    }
+}
+
+.w-imagen-servicio {
+    @media (width > 768px) {
+        width: 50%;
+    }
+}
+
+.logo {
+    @media (width <= 640px) {
+        width: 30%;
+    }
+    @media (640px < width < 768px) {
         width: 90%;
     }
 
-    @media(768px <= width < 1024px){
+    @media (768px <= width < 1024px) {
         width: 45%;
     }
 
-    @media(1024px <= width){
+    @media (1024px <= width) {
         width: 20%;
     }
 }
 
-.border-bottom-nav-selected{
-    
+.border-bottom-nav-selected {
     border-bottom-color: rgb(105, 112, 99);
 }
-.border-bottom-nav-no-selected:hover{
-    
+.border-bottom-nav-no-selected:hover {
     border-bottom-color: rgb(43, 61, 27);
 }
 
-.border-left-nav-selected{
-    
+.border-left-nav-selected {
     border-left-color: rgb(105, 112, 99);
 }
-.border-left-nav-no-selected:hover, .btn-yilsau:hover, .btn-user{
-    
-    background-color: rgb(43, 61, 27)!important;
+.border-left-nav-no-selected:hover,
+.btn-yilsau:hover,
+.btn-user {
+    background-color: rgb(43, 61, 27) !important;
     color: white;
 }
 
-
-
-.border-left-nav-selected:focus,.btn-yilsau:focus, .btn-user:hover{
-    
+.border-left-nav-selected:focus,
+.btn-yilsau:focus,
+.btn-user:hover {
     background-color: rgb(105, 112, 99) !important;
     color: white !important;
 }
 
-
-.hamburguesa:hover,.hamburgues:focus{
-    background-color:rgb(105, 112, 99);
+.hamburguesa:hover,
+.hamburgues:focus {
+    background-color: rgb(105, 112, 99);
 }
 
-
-.servicio-card{
-   
-    width:  45%;
+.servicio-card {
+    width: 45%;
 }
