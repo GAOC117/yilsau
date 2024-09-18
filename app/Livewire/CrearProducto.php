@@ -4,9 +4,12 @@ namespace App\Livewire;
 
 use App\Models\Productos;
 use Livewire\Component;
+use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class CrearProducto extends Component
 {
+    use WithFileUploads;
+
     public $nombre_producto;
     public $descripcion;
     public $costo;
