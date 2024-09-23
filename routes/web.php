@@ -27,6 +27,8 @@ Route::get('/nuestros-servicios/{servicio}', [NuestrosServiciosController::class
 //Productos
 Route::get('/productos', [ProductosController::class,'index'])->name('productos');
 Route::get('/productos/create', [ProductosController::class,'create'])->name('productos.create');
+Route::get('/productos/{producto}/edit', [ProductosController::class,'edit'])->name('productos.edit');//->middleware(['auth','verified'])->name('productos.edit');
+Route::get('/productos/{producto}', [ProductosController::class,'show'])->name('productos.show');//->middleware(['auth','verified'])->name('productos.edit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

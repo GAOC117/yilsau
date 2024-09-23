@@ -40,7 +40,7 @@ class EditarServicio extends Component
     }
 
     public function editarServicio(){
-      
+
         $datos = $this->validate();
         
         //si hay imagen nueva

@@ -1,4 +1,4 @@
 <x-app-layout>
   
-    <livewire:editar-servicio :producto="$producto"/>
+    <livewire:editar-producto :producto="$producto"/>
 </x-app-layout>

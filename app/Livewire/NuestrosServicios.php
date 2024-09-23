@@ -27,7 +27,6 @@ class NuestrosServicios extends Component
 
     public function eliminarServicio(Servicios $servicio)
     {
-        
         $servicio->delete();
     }
 }

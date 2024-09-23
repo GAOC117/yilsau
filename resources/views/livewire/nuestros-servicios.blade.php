@@ -1,11 +1,6 @@
-<div class=" py-5 px-5 md:px-0">
-    {{-- Necesito capturar:
-1. Imagen del servicio
-2. Nombre del servicio
-3. Descripción general del servio
-4. Descripción detallada del servicio
-<div class="row"></div>
---}}
+<div class="pt-2 pb-3 px-5 md:px-0">
+    <h1 class="color-titulo h1 pb-3">Nuestros Servicios</h1>
+
 
     <div class="row gap-4 justify-center ">
         @forelse ($servicios as $servicio)

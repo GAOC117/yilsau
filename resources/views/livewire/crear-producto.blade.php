@@ -16,7 +16,7 @@
        
 
           <div class="" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
-            <x-input-label for="descripcion" :value="__('Descripción breve del servicio')" />
+            <x-input-label for="descripcion" :value="__('Descripción del producto')" />
             <textarea  id="descripcion" class="block mt-1 w-full" type="text" wire:model="descripcion"
                  placeholder="Descripción" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" maxlength="50"></textarea>
                  <span x-html="count"></span> / <span x-html="$refs.countme.maxLength"></span>
