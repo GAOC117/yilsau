@@ -25,7 +25,7 @@
                 <x-nav-link :href="route('productos')" :active="request()->routeIs('productos')">
                     Nuestros productos
                 </x-nav-link>
-                <x-nav-link :href="route('home')" :active="request()->routeIs('x')">
+                <x-nav-link :href="route('contacto')" :active="request()->routeIs('contacto')">
                     Contacto
                 </x-nav-link>
             </div>

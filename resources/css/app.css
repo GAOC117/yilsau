@@ -51,6 +51,39 @@
   
 }
 
+.accordion-item {
+    background-color: #f9f9f9; /* Color de fondo para el acordeón */
+    border: 1px solid #ddd; /* Borde del acordeón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.accordion-button {
+    background-color: #fff; /* Color de fondo del botón */
+    color: #333; /* Color del texto del botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.accordion-button:hover {
+    background-color: #e2e2e2; /* Color de fondo en hover */
+}
+
+.accordion-body {
+    font-size: 1.1rem; /* Aumentar el tamaño de la fuente del cuerpo */
+}
+
+/* Estilo del enlace */
+.text-blue-800 {
+    color: #1e3a8a; /* Color del enlace */
+}
+
+.text-blue-800:hover {
+    color: #1d4ed8; /* Color del enlace en hover */
+}
+
+.collapse.show {
+    visibility: visible;
+  }
+
 .yilsau-body-dark {
     background-color: rgba(0, 0, 0, 0.5);
 }

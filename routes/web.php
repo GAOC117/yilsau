@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminDashboardController;
+use App\Http\Controllers\ContactoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NuestrosServiciosController;
@@ -29,6 +30,10 @@ Route::get('/productos', [ProductosController::class,'index'])->name('productos'
 Route::get('/productos/create', [ProductosController::class,'create'])->name('productos.create');
 Route::get('/productos/{producto}/edit', [ProductosController::class,'edit'])->name('productos.edit');//->middleware(['auth','verified'])->name('productos.edit');
 Route::get('/productos/{producto}', [ProductosController::class,'show'])->name('productos.show');//->middleware(['auth','verified'])->name('productos.edit');
+
+//contacto
+Route::get('/contacto', [ContactoController::class,'index'])->name('contacto');//->middleware(['auth','verified'])->name('contacto.index');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
